@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200;1,300;1,400;1,700;1,800&display=swap");
+
+#root {
+  --tobacco-brown-50: #f5f4f1;
+  --tobacco-brown-100: #e7e4da;
+  --tobacco-brown-200: #d0c9b8;
+  --tobacco-brown-300: #b5a98f;
+  --tobacco-brown-400: #9f8e70;
+  --tobacco-brown-500: #907d62;
+  --tobacco-brown-600: #7c6853;
+  --tobacco-brown-700: #645244;
+  --tobacco-brown-800: #56463d;
+  --tobacco-brown-900: #4b3e38;
+  --tobacco-brown-950: #2a211e;
+  --white-main: #fbfcfc;
+  --black-main: #212f3d;
+  --red-main: #c0392b ;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior:smooth;
+}
+
+.main-black {
+  min-width: 100%;
+  min-height: 100vh;
+  background: rgb(181, 169, 143);
+  background: linear-gradient(
+    135deg,
+    var(--tobacco-brown-400) 0%,
+    var(--tobacco-brown-900) 83%
+  );
+  color: var(--white-main);
+}
+.main-white{
+    background: var(--white-main);
+    color: var(--black-main);
+}
+
+main .logo{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+.home, .about, .project, .games, .contact{
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #b5a98f;
+}
