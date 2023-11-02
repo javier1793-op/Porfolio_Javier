@@ -14,7 +14,7 @@
   --tobacco-brown-950: #2a211e;
   --white-main: #fbfcfc;
   --black-main: #212f3d;
-  --red-main: #c0392b ;
+  --red-main: #c0392b;
 }
 
 * {
@@ -22,48 +22,41 @@
   border: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 .main-black {
   min-width: 100%;
   min-height: 100vh;
-  background: rgb(181, 169, 143);
-  background: linear-gradient(
-    135deg,
-    var(--tobacco-brown-400) 0%,
-    var(--tobacco-brown-900) 83%
-  );
   color: var(--white-main);
+  background: #9f8e71;
+  background: linear-gradient(315deg, #9f8e71, #4b3f38);
 }
-.main-white{
-    background: var(--white-main);
-    color: var(--black-main);
+.main-white {
+  background: var(--white-main);
+  color: var(--black-main);
 }
 
-main .logo{
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    top: 0;
+main .logo {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
 }
-.home, .about, .project, .games, .contact{
+.home,
+.about,
+.project,
+.games,
+.contact {
   min-width: 100%;
   min-height: 100vh;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #b5a98f;
 }
 
-header{
+header {
   position: fixed;
   z-index: 1000;
-  bottom: 30px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   width: 400px;
@@ -73,15 +66,15 @@ header{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  filter: drop-shadow(0 15px 35px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
 }
 
-header nav{
+header nav {
   display: flex;
   width: 350px;
 }
 
-header nav a{
+header nav a {
   position: relative;
   list-style: none;
   width: 70px;
@@ -95,51 +88,51 @@ header nav a{
   font-weight: 500;
 }
 
-header nav a .icon{
+header nav a .icon {
   position: relative;
   display: block;
   line-height: 65px;
   font-size: 1.5em;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
   color: var(--tobacco-brown-600);
 }
-header nav a.active .icon{
+header nav a.active .icon {
   transform: translateY(-32px);
   color: var(--red-main);
 }
 
-header nav a .text{
+header nav a .text {
   position: absolute;
   color: var(--white-main);
   padding: 2px 7px;
   border-radius: 12px;
   font-weight: 400;
-  font-size: .75em;
-  letter-spacing: .05em;
-  transition: .5s;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
   transform: translateY(15px);
   opacity: 0;
 }
 
-header nav a.active .text{
+header nav a.active .text {
   transform: translateY(-4px);
   background: var(--tobacco-brown-300);
   opacity: 1;
 }
 
-header nav .indicador{
+header nav .indicador {
   position: absolute;
   top: -35px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background: var(--white-main);
-  transition: .5s;
+  transition: 0.5s;
   z-index: 1;
 }
 
-header nav .indicador::before{
+header nav .indicador::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -150,7 +143,7 @@ header nav .indicador::before{
   background: transparent;
   box-shadow: 15px 18px #fff;
 }
-header nav .indicador::after{
+header nav .indicador::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -162,18 +155,18 @@ header nav .indicador::after{
   box-shadow: -15px 18px #fff;
 }
 
-header nav a:nth-child(1).active ~ .indicador{
+header nav a:nth-child(1).active ~ .indicador {
   transform: translateX(calc(70px * 0));
 }
-header nav a:nth-child(2).active ~ .indicador{
+header nav a:nth-child(2).active ~ .indicador {
   transform: translateX(calc(70px * 1));
 }
-header nav a:nth-child(3).active ~ .indicador{
+header nav a:nth-child(3).active ~ .indicador {
   transform: translateX(calc(70px * 2));
 }
-header nav a:nth-child(4).active ~ .indicador{
+header nav a:nth-child(4).active ~ .indicador {
   transform: translateX(calc(70px * 3));
 }
-header nav a:nth-child(5).active ~ .indicador{
+header nav a:nth-child(5).active ~ .indicador {
   transform: translateX(calc(70px * 4));
 }

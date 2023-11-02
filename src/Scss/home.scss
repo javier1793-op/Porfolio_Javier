@@ -1,0 +1,41 @@
+.contentHome{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7rem;
+}
+
+.contentHome .phone{
+    width: 40%;
+    min-height: 65vh;
+   
+}
+.contentHome .textUser{
+    width: 40%;
+    min-height: 65vh;
+}
+
+@media (max-width:900px){
+    .contentHome{
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        padding: 5rem 3rem;
+    }
+    .contentHome .phone{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentHome .textUser{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
