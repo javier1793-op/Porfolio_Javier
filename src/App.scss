@@ -25,6 +25,7 @@
   scroll-behavior: smooth;
 }
 
+
 .main-black {
   min-width: 100%;
   min-height: 100vh;
@@ -154,6 +155,7 @@ header nav .indicador::after {
   background: transparent;
   box-shadow: -15px 18px #fff;
 }
+
 
 header nav a:nth-child(1).active ~ .indicador {
   transform: translateX(calc(70px * 0));

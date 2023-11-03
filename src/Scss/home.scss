@@ -14,9 +14,22 @@
    
 }
 .contentHome .textUser{
-    width: 40%;
+    width: 50%;
     min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
+.textUser h1{
+    font-size: 4rem;
+    color: var(--tobacco-brown-300);
+}
+.textUser p{
+    font-size: 2rem;
+}
+
+
 
 @media (max-width:900px){
     .contentHome{
@@ -38,4 +51,5 @@
         align-items: center;
         flex-direction: column;
     }
+    
 }

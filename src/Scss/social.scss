@@ -1,0 +1,42 @@
+.social{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social .sectionIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sectionIcon p{
+    position: absolute;
+    font-size: .8rem;
+    transform: translateY(25px);
+    transition: .2s;
+    opacity: 0;
+}
+
+.sectionIcon:hover p{
+    opacity: 1;
+}
+ 
+.social a:link, :visited, :hover, :active{
+   text-decoration: none;
+}
+
+.social  a .iconSocial{
+    border: 1px solid var(--white-main);
+    color: var(--white-main);
+    font-size: 2rem;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.social  a .iconSocial:hover{
+    color: var(--tobacco-brown-300);
+    border: 1px solid var(--tobacco-brown-300);
+}

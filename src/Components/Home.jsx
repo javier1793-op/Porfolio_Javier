@@ -1,7 +1,11 @@
 import "../Scss/home.scss";
 import PhoneUser from "./PhoneUser";
+import Social from "./Social";
+
+
 
 const Home = () => {
+  
   return (
     <>
       <div className="contentHome">
@@ -10,8 +14,8 @@ const Home = () => {
         </section>
         <section className="textUser">
           <h1>Ruiz Diaz Javier A.</h1>
-          <p>Progammin Front End</p>
-          <span className="social">iconos aca</span>
+          <p>Frontend programmer| systems analyst</p>
+          <Social/>
         </section>
       </div>
     </>
