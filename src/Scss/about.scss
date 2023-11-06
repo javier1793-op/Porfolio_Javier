@@ -1,0 +1,48 @@
+
+.contentAbout {
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-areas:
+      "titleAbout titleAbout"
+      "descriptionAbout  infoAbout";
+    grid-template-rows: 4rem 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    }
+    
+    .titleAbout { 
+        grid-area: titleAbout;
+        padding: 1rem;
+        min-height: 3rem;
+        font-size: 2rem;
+        color: var(--tobacco-brown-300);
+    
+    }
+
+    .descriptionAbout { 
+        grid-area: descriptionAbout; 
+        padding: 1rem;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .infoAbout { 
+        grid-area: infoAbout;
+        padding: 1rem;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        text-align: justify;
+    
+    }
+
+    @media (max-width:900px){
+        .contentAbout {
+            grid-template-areas:
+              "titleAbout titleAbout"
+              "descriptionAbout descriptionAbout"
+              "infoAbout  infoAbout";
+            }
+    
+    }
