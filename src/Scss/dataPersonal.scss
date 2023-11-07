@@ -1,0 +1,40 @@
+.dataPersonal{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dataPersonal span:nth-child(1){
+    font-size: 1.5rem;
+    color: var(--tobacco-brown-300);
+    font-weight: 600;
+}
+.dataPersonal span:nth-child(2){
+    font-weight: 600;
+}
+.btn-cv{
+    width: 12rem;
+    height: 3.5rem;
+    background: var(--tobacco-brown-300);
+    color: var(--red-main);
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    transition: .5s;
+}
+.btn-cv .iconDownload{
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid var(--red-main);
+    padding: 2px;
+    border-radius: 50%;
+}
+.btn-cv:hover{
+    color: var(--white-main);
+    background: var(--black-main);
+}
