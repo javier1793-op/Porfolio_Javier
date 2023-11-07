@@ -2,6 +2,7 @@
 import "./App.scss";
 import About from "./Components/About";
 import Home from "./Components/Home";
+import Level from "./Components/Level";
 
 import Logo from "./Components/Logo";
 import Nav from "./Components/Nav";
@@ -30,6 +31,10 @@ function App() {
         <section className="project" id="project">Project</section>
         <section className="games" id="games">Games</section>
         <section className="contact"id="contact">Contact</section>
+        <section className="levelup">
+
+      <Level/>
+        </section>
       </main>
     </>
   );

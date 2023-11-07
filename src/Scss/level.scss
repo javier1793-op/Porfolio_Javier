@@ -1,0 +1,20 @@
+.level{
+   margin: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 2.5rem;
+   height: 2.5rem;
+   cursor: pointer;
+   background: var(--white-main);
+   color: var(--tobacco-brown-400);
+   font-size: 1.5rem;
+   font-weight: 700;
+   border-radius: 10px;
+   transition: .5s;
+}
+.level:hover{
+    background: var(--black-main);
+    color: var(--red-main);
+    transform: translateY(-5px);
+}

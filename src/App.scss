@@ -44,6 +44,12 @@ main .logo {
   left: 0;
   top: 0;
 }
+main .levelup {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+}
 .home,
 .about,
 .project,
