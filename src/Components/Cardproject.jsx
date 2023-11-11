@@ -1,23 +1,22 @@
 import '../Scss/cardProject.scss'
-import Anime from '../Img/project/Anime.png'
+import PropTypes from 'prop-types';
 
-const Cardproject = () => {
-    const imgUrl= Anime;
-
+const Cardproject = ({imgUrl,title,description}) => {
+  
+    
     const estiloComponente = {
         backgroundImage: `url(${imgUrl})`,
         backgroundSize: 'cover', 
-       
+        backgroundRepeat: 'no-repeat',
       };
 
   return (
     <>
       <div className="card" style={estiloComponente}>
         <div className="card__content">
-          <h2 className="card__title">Anime Page</h2>
+          <h2 className="card__title">{title}</h2>
           <p className="card__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            eligendi perferendis similique!
+           {description}
           </p>
           <a href="#" className="btn">
             See More
@@ -27,5 +26,9 @@ const Cardproject = () => {
     </>
   );
 };
-
+Cardproject.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  };
 export default Cardproject;

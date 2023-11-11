@@ -25,7 +25,7 @@
   
     &__title {
       position: relative;
-      width: max-content;
+      width: 16rem;
       &::after {
         content: "";
         position: absolute;
@@ -63,7 +63,10 @@
     }
   }
   .btn {
-    padding: 0.5em 1.25em;
+    padding: 0.5em 1rem;
+    border: 1px solid var(--tobacco-brown-300);
+    text-align: center;
+    font-size: 1rem;
     width: 60%;
     border-radius: 0.25em;
     font-weight: 600;
