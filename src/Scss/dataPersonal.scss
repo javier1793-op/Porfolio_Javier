@@ -39,3 +39,9 @@
     color: var(--white-main);
     background: var(--black-main);
 }
+@media (max-width:900px){
+    .btn-cv {
+        margin-top: 3rem;
+        }
+
+}

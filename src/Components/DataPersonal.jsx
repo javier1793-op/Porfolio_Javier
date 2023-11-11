@@ -1,5 +1,6 @@
 import "../Scss/dataPersonal.scss";
 import { FiDownload } from "react-icons/fi";
+import Skill from "./Skill";
 
 const DataPersonal = () => {
   const Data = [
@@ -33,11 +34,7 @@ const DataPersonal = () => {
       label: "Studying:",
       data: "Systems Engineering - UTN",
     },
-    {
-      id: 7,
-      label: "Skill:",
-      data: "Javascript - React - HTML - CSS - NODEJS",
-    },
+   
   ];
 
   return (
@@ -48,7 +45,14 @@ const DataPersonal = () => {
           <span>{item.data}</span>
         </div>
       ))}
-      <button className="btn-cv">downloand CV <FiDownload className="iconDownload"/></button>
+      <div className="dataPersonal" >
+          <span>Skill:</span>
+          <span><Skill/></span>
+        </div>
+        
+      <button className="btn-cv">
+        downloand CV <FiDownload className="iconDownload" />
+      </button>
     </>
   );
 };

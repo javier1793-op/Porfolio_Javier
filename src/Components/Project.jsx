@@ -5,6 +5,10 @@ import Anime from '../Img/project/Anime.png'
 import Serendipia from '../Img/project/serendipia.png'
 import Things from '../Img/project/things.png'
 import Weather from '../Img/project/weather.png'
+import Bios from '../Img/project/bios.png'
+import Fabrica from '../Img/project/fabrica.png'
+import Homepage from '../Img/project/homepage.png'
+import Summary from '../Img/project/summary.png'
 
 const Project = () => {
 
@@ -32,6 +36,30 @@ const Project = () => {
             urlImg:`${Weather}`,
             title:'Page Weather',
             description:'Pagina del Clima para busqueda y seguimiento de los mismo',
+        },
+        {
+            id:104,
+            urlImg:`${Bios}`,
+            title:'Page Bios Informática',
+            description:'Pagina del ventas online y servicios tecnicos',
+        },
+        {
+            id:105,
+            urlImg:`${Fabrica}`,
+            title:'Page Fábrica Cultural',
+            description:'Pagina de eventos a nivel local sobre la fundación',
+        },
+        {
+            id:106,
+            urlImg:`${Homepage}`,
+            title:'Challenger Frontend',
+            description:'Pagina de estructura de grillas grid',
+        },
+        {
+            id:107,
+            urlImg:`${Summary}`,
+            title:'Challenger Frontend',
+            description:'Pagina de diseño css con calculo matematicos',
         },
     ]
     return (
