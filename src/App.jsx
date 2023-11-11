@@ -1,4 +1,3 @@
-
 import "./App.scss";
 import About from "./Components/About";
 import Home from "./Components/Home";
@@ -6,13 +5,9 @@ import Level from "./Components/Level";
 
 import Logo from "./Components/Logo";
 import Nav from "./Components/Nav";
-
-
+import Project from "./Components/Project";
 
 function App() {
-
-  
-  
   return (
     <>
       <main className="main-black">
@@ -20,20 +15,25 @@ function App() {
           <Logo />
         </section>
         <header>
-          <Nav/>
+          <Nav />
         </header>
         <section className="home" id="home">
-          <Home/>
+          <Home />
         </section>
         <section className="about" id="about">
-          <About/>
-          </section>
-        <section className="project" id="project">Project</section>
-        <section className="games" id="games">Games</section>
-        <section className="contact"id="contact">Contact</section>
+          <About />
+        </section>
+        <section className="project" id="project">
+          <Project/>
+        </section>
+        <section className="games" id="games">
+          Games
+        </section>
+        <section className="contact" id="contact">
+          Contact
+        </section>
         <section className="levelup">
-
-      <Level/>
+          <Level />
         </section>
       </main>
     </>

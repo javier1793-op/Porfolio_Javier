@@ -1,0 +1,19 @@
+.contentProject{
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+  @media (max-width:900px){
+    .contentProject{
+       justify-items: center;
+       gap: 1.5rem;
+    }
+
+}

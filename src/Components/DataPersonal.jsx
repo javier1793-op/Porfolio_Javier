@@ -33,6 +33,11 @@ const DataPersonal = () => {
       label: "Studying:",
       data: "Systems Engineering - UTN",
     },
+    {
+      id: 7,
+      label: "Skill:",
+      data: "Javascript - React - HTML - CSS - NODEJS",
+    },
   ];
 
   return (
