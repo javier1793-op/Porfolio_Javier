@@ -1,8 +1,14 @@
 import "../Scss/dataPersonal.scss";
 import { FiDownload } from "react-icons/fi";
 import Skill from "./Skill";
+import CV from '../file/CV.pdf'
 
 const DataPersonal = () => {
+
+ 
+
+  
+
   const Data = [
     {
       id: 1,
@@ -49,10 +55,9 @@ const DataPersonal = () => {
           <span>Skill:</span>
           <span><Skill/></span>
         </div>
-        
-      <button className="btn-cv">
+      <a href={CV} alt="fileCV" className="btn-cv" download >
         downloand CV <FiDownload className="iconDownload" />
-      </button>
+      </a>
     </>
   );
 };

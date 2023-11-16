@@ -27,7 +27,7 @@ const Social = () => {
         </section>
         <section className="sectionIcon">
         <a
-          href="https://github.com/javier1793-op"
+          href="https://javier1793-op.github.io/CV/"
           target="_blank"
           rel="noopener noreferrer"
         >

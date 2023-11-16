@@ -16,7 +16,7 @@
     height: 3.5rem;
     background: var(--tobacco-brown-300);
     color: var(--red-main);
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
@@ -27,6 +27,7 @@
     gap: .5rem;
     transition: .5s;
     border: 2px solid var(--tobacco-brown-600);
+    text-decoration: none;
 }
 .btn-cv .iconDownload{
     font-size: 1.5rem;
