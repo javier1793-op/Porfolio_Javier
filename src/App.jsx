@@ -1,5 +1,6 @@
 import "./App.scss";
 import About from "./Components/About";
+import Game from "./Components/Game";
 import Home from "./Components/Home";
 import Level from "./Components/Level";
 
@@ -27,7 +28,7 @@ function App() {
           <Project/>
         </section>
         <section className="games" id="games">
-          Games
+          <Game/>
         </section>
         <section className="contact" id="contact">
           Contact
