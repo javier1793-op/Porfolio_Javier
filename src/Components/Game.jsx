@@ -22,7 +22,7 @@ const Game = () => {
       id: 301,
       titleGame: "Warcraft Rivals: Battle of Ta'Tac",
       descriptionGame:
-        "Immerse yourself in the epic battle of Ta'Tac in Warcraft Rivals, a unique version ",
+        "Immerse yourself in the epic battle of Ta'Tac in Warcraft Rivals ",
       linkGit: "https://github.com/javier1793-op/Tictactoe",
       linkPage: "https://javier1793-op.github.io/Tictactoe/",
       imgGame: `${Tic}`,
