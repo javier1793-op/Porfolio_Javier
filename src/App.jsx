@@ -1,5 +1,6 @@
 import "./App.scss";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 import Game from "./Components/Game";
 import Home from "./Components/Home";
 import Level from "./Components/Level";
@@ -31,7 +32,7 @@ function App() {
           <Game/>
         </section>
         <section className="contact" id="contact">
-          Contact
+          <Contact/>
         </section>
         <section className="levelup">
           <Level />

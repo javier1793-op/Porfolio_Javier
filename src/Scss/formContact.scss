@@ -1,0 +1,93 @@
+.contentForm {
+  width: 60%;
+  height: 75%;
+  background: var(--white-main);
+  border: 2px solid var(--tobacco-brown-400);
+  border-radius: 10px;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+  color: var(--black-main);
+  padding: 1rem;
+}
+.contentForm .titleContact {
+  font-size: 1.5rem;
+  color: var(--tobacco-brown-300);
+}
+.contentForm .form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+.form input,
+textarea {
+  outline: none;
+  list-style: none;
+  color: var(--black-main);
+  padding: 0.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--tobacco-brown-300);
+}
+.btnContact {
+  height: 2.5rem;
+  text-decoration: none;
+  background: var(--tobacco-brown-300);
+  color: var(--red-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: 0.5s;
+  border: 2px solid var(--tobacco-brown-600);
+}
+
+.btnContact .iconContact {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2px;
+}
+.btnContact:hover {
+  color: var(--white-main);
+  background: var(--black-main);
+}
+.separator {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 1rem;
+}
+.separator .separatorContact {
+  flex-grow: 1;
+  height: 1px; 
+  background-color:var(--black-main);
+  border: none;
+  margin: 0 1rem;
+}
+.altContact{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+.altContact .alt{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+.alt:nth-child(1){
+    color: var(--green-main);
+}
+.alt:nth-child(2){
+    color: var(--blue-main);
+}
