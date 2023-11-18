@@ -1,5 +1,6 @@
 import '../Scss/contact.scss'
 import Formcontact from './Formcontact'
+import Infocontact from './Infocontact'
 
 const Contact = () => {
   return (
@@ -9,7 +10,7 @@ const Contact = () => {
                <Formcontact/>
             </section>
             <section className="infoContact">
-                information
+                <Infocontact/>
             </section>
         </div>
     </>

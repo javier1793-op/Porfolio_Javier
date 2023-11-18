@@ -27,3 +27,16 @@
     width: 100%;
     min-height: 100vh;
 }
+@media (max-width:900px){
+    .contentContact{
+        grid-template-areas:
+          "formContact formContact"
+          "infoContact infoContact"
+        }
+       
+        .infoContact{
+            min-height: 50vh;
+            padding-bottom: 4rem;
+        }
+
+}

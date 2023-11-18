@@ -91,3 +91,12 @@ textarea {
 .alt:nth-child(2){
     color: var(--blue-main);
 }
+
+@media (max-width:900px){
+ 
+  .contentForm {
+    width: 70%;
+    height: 95%;
+    margin-top: 2rem;
+  }
+}

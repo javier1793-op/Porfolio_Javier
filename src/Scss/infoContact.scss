@@ -1,0 +1,25 @@
+.contentinfoContact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  padding: 1rem;
+  height: 5rem;
+  background: var(--white-main);
+  color: var(--black-main);
+  border: 2px solid var(--tobacco-brown-400);
+  border-radius: 10px;
+  transition: 0.5s;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+}
+.contentinfoContact:hover {
+  transform: scale(1.1);
+}
+.contentinfoContact h4 {
+  color: var(--tobacco-brown-300);
+  font-size: 1.5rem;
+}
+.iconinfoContact {
+  font-size: 2rem;
+  color: var(--tobacco-brown-400);
+}

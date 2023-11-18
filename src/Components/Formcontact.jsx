@@ -5,7 +5,7 @@ import { FaWhatsapp,FaMailBulk } from "react-icons/fa";
 const Formcontact = () => {
   return (
     <div className="contentForm">
-      <h1 className="titleContact">Contact Us</h1>
+      <h1 className="titleContact">Contact Me</h1>
       <form className="form">
         <input type="text" placeholder="name" />
         <input type="text" placeholder="mail" />
