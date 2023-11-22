@@ -106,11 +106,11 @@ const Formcontact = ({ setError }) => {
         <hr className="separatorContact" />
       </section>
       <section className="altContact">
-        <a href="" className="alt">
+        <a href="https://wa.me/5493704264610" className="alt"  target="_blank" rel="noreferrer">
             <FaWhatsapp/>
             <p>contact me with whatsapp</p>
         </a>
-        <a href="" className="alt">
+        <a href="mailto:javier17utn@gmail.com" className="alt" target="_blank" rel="noreferrer">
             <FaMailBulk/>
             <p>contact me with Oultlook</p>
         </a>
