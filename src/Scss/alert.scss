@@ -1,6 +1,6 @@
 .contentAlert {
   position: absolute;
-  z-index: 15000;
+  z-index: -1;
   top: 0;
   width: 40%;
   height: 3rem;
@@ -31,4 +31,5 @@
 .contentAlert.active{
   opacity: 1;
   transform: translateY(0);
+  z-index: 15000;
 }
