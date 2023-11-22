@@ -1,76 +1,85 @@
 import "../Scss/formContact.scss";
-import  { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { LuSend } from "react-icons/lu";
-import { FaWhatsapp,FaMailBulk } from "react-icons/fa";
+import { FaWhatsapp, FaMailBulk } from "react-icons/fa";
 
-const Formcontact = ({setError}) => {
-
-  const [valid, setValid] = useState(true)
-
+const Formcontact = ({ setError }) => {
+  const [valid, setValid] = useState(false);
   const form = useRef();
 
-
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+
+    
     validate();
-    if(valid){
-       emailjs.sendForm('service_ht2egk6', 'Contact_Form', form.current, 'd1coGa8C7PSe-s7fy')
-      .then((result) => {
+
+    if (valid) {
+      try {
+        await emailjs.sendForm('service_ht2egk6', 'Contact_Form', form.current, 'd1coGa8C7PSe-s7fy');
+
         setError({
-          textError:'message sent successfully',
-         typeError:'succes'
-         })
-      }, (error) => {
+          textError: 'Message sent successfully',
+          typeError: 'success',
+          active:'active'
+        });
+      } catch (error) {
         setError({
-          textError:'An error occurred in the shipment',
-         typeError:'error'
-         })
-      });
+          textError: 'An error occurred in the shipment',
+          typeError: 'error',
+          active:'active'
+        });
+      }
     }
-   
+    setTimeout(() => {
+      setError({
+        textError: '',
+        typeError: '',
+        active:''
+      });
+    }, 10000);
   };
 
-  const  validate =()=>{
-    const name=form.current.user_name.value;
-    const email=form.current.user_email.value;
-    const message= form.current.message.value;
+  const validate = () => {
+    const name = form.current.user_name.value;
+    const email = form.current.user_email.value;
+    const message = form.current.message.value;
 
-    const mailregex =
-    /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    const mailregex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
     if (name === "") {
-      setValid(false)
+      setValid(false);
       setError({
-       textError:'You must complete the name field',
-      typeError:'text'
-      })
-      
-      return ;
+        textError: 'You must complete the name field',
+        typeError: 'text',
+        active:'active'
+      });
+      return;
     }
 
     if (!mailregex.test(email) || email === '') {
-      setValid(false)
+      setValid(false);
       setError({
-        textError:'The email field is not correct',
-       typeError:'text'
-       })
-      
+        textError: 'The email field is not correct',
+        typeError: 'text',
+        active:'active'
+      });
       return;
     }
 
     if (message === "") {
-      setValid(false)
+      setValid(false);
       setError({
-      textError:'you must complete the message field',
-       typeError:'text'
-       })
-      return; 
+        textError: 'You must complete the message field',
+        typeError: 'text',
+        active:'active'
+      });
+      return;
     }
 
-
-  }
+    setValid(true);
+  };
 
 
   return (

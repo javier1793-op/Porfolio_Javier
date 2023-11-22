@@ -8,15 +8,17 @@ const Contact = () => {
   const [error, setError] = useState(
     {
       textError:'',
-      typeError:''
+      typeError:'',
+      active:''
     }
   )
   return (
     <>
         <div className="contentContact">
-          <Alert
+          <Alert 
             textError={error.textError}
             typeError={error.typeError}
+            active={error.active}
           />
             <section className="formContact">
                <Formcontact

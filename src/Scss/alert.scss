@@ -12,8 +12,11 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: .5s;
 }
-.contentAlert.succes {
+.contentAlert.success {
   color: #239b56;
   background: #abebc6;
 }
@@ -24,4 +27,8 @@
 .contentAlert.text {
   color: var(--black-main) ;
   background: #f9e79f;
+}
+.contentAlert.active{
+  opacity: 1;
+  transform: translateY(0);
 }
