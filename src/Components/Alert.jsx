@@ -1,10 +1,10 @@
+import '../Scss/alert.scss'
 
-
-const Alert = () => {
+const Alert = ({textError,typeError}) => {
   return (
     <>
-       <div className="contentAlert">
-        
+       <div className={`contentAlert ${typeError} `}>
+        <p>{textError}</p>
        </div>
     </>
   )

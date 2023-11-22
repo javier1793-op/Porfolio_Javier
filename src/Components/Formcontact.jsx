@@ -5,11 +5,12 @@ import emailjs from '@emailjs/browser';
 import { LuSend } from "react-icons/lu";
 import { FaWhatsapp,FaMailBulk } from "react-icons/fa";
 
-const Formcontact = () => {
+const Formcontact = ({setError}) => {
 
   const [valid, setValid] = useState(true)
 
   const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,9 +18,15 @@ const Formcontact = () => {
     if(valid){
        emailjs.sendForm('service_ht2egk6', 'Contact_Form', form.current, 'd1coGa8C7PSe-s7fy')
       .then((result) => {
-          console.log(result.text);
+        setError({
+          textError:'message sent successfully',
+         typeError:'succes'
+         })
       }, (error) => {
-          console.log(error.text);
+        setError({
+          textError:'An error occurred in the shipment',
+         typeError:'error'
+         })
       });
     }
    
@@ -35,19 +42,30 @@ const Formcontact = () => {
 
     if (name === "") {
       setValid(false)
-      console.log('no completaste el campo name')
+      setError({
+       textError:'You must complete the name field',
+      typeError:'text'
+      })
+      
       return ;
     }
 
     if (!mailregex.test(email) || email === '') {
       setValid(false)
-      console.log('el campo email es incorrecto')
+      setError({
+        textError:'The email field is not correct',
+       typeError:'text'
+       })
+      
       return;
     }
 
     if (message === "") {
       setValid(false)
-      console.log('no completaste el campo message')
+      setError({
+      textError:'you must complete the message field',
+       typeError:'text'
+       })
       return; 
     }
 
