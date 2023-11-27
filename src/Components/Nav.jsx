@@ -1,9 +1,43 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiAirplay,FiCoffee,FiCodesandbox,FiDribbble,FiMail } from "react-icons/fi";
 
 const Nav = () => {
 
     const [menu, setMenu] = useState('home')
+
+    useEffect(() => {
+      const handleScroll = () => {
+
+        const scrollY = window.scrollY ;
+
+        const homePos = document.getElementById('home').offsetTop;
+        const aboutPos = document.getElementById('about').offsetTop;
+        const projectPos = document.getElementById('project').offsetTop;
+        const gamesPos = document.getElementById('games').offsetTop;
+        const contactPos = document.getElementById('contact').offsetTop;
+  
+   
+        if (scrollY < aboutPos) {
+          setMenu('home');
+        } else if (scrollY < projectPos) {
+          setMenu('about');
+        } else if (scrollY < gamesPos) {
+          setMenu('project');
+        } else if (scrollY < contactPos) {
+          setMenu('games');
+        } else {
+          setMenu('contact');
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+
   return (
     <>
          <nav>
