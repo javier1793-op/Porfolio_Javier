@@ -14,7 +14,7 @@ const PhoneUser = () => {
                     </div>
                     <p>Koppo</p>
                 </div>
-                <img src={Phone} alt="foto" />
+                <img src={Perfil} alt="foto" />
                 <div className="footerPhone">
                     <BsFillHeartFill className='heart'/>
                     <FiSend/>
