@@ -145,3 +145,12 @@
     color: var(--white-main);
     background: var(--black-main);
 }
+
+@media (max-width:900px){
+ 
+  .modal-overlay .modal {
+  width: 90%;
+  height: 90%;
+ 
+}
+}
