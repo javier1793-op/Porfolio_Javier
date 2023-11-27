@@ -1,5 +1,5 @@
 ## Screenshot
-![Design preview ](./src/Img/perfil.jpeg)
+![Design preview ](./src/Img/Screenshot.png)
 
 ### Links
 
