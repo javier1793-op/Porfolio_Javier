@@ -9,7 +9,7 @@ import Weather from "../Img/project/weather.png";
 import Bios from "../Img/project/bios.png";
 import Fabrica from "../Img/project/fabrica.png";
 import Homepage from "../Img/project/homepage.png";
-import Summary from "../Img/project/summary.png";
+import Biosit from "../Img/project/biosit.png";
 import Modal from "./Modal";
 
 import { useState } from "react";
@@ -31,8 +31,10 @@ const Project = () => {
       urlImg: `${Anime}`,
       title: "Page Anime",
       description:
-        "Explore a captivating anime platform featuring a user-friendly login system for advanced functionalities. Dive into information search for your favorite series and characters, utilize our efficient favorites system, and delve deeper with our powerful search engine powered by a specialized API.",
+        "Explore a captivating anime platform featuring a user-friendly login system for advanced functionalities. Dive into information search for your favorite series and characters, utilize our efficient favorites system, and delve deeper with our powerful search engine powered by a specialized API.-- USER: koppo@gmail.com -- PASS: koppo",
       languaje: ["SCSS", "HTML", "REACT"],
+      link: "https://javier1793-op.github.io/anime/",
+      git: "https://github.com/javier1793-op/anime",
     },
     {
       id: 101,
@@ -41,6 +43,8 @@ const Project = () => {
       description:
         "Immerse yourself in a personal page dedicated to journal posts, featuring a captivating video game-inspired design. Traverse a magical forest, complemented by an administrator login system. Experience seamless data management with a CRUD system, seamlessly integrated through a custom API built with Mongoose DB technology",
       languaje: ["SCSS", "HTML", "REACT", "NODEJS", "MONGOSE"],
+      link: "https://javier1793-op.github.io/diaryPersonal/",
+      git: "https://github.com/javier1793-op/diaryPersonal",
     },
     {
       id: 102,
@@ -49,41 +53,57 @@ const Project = () => {
       description:
         "Experience a streamlined activity reminder app, meticulously designed for listing and effortlessly managing tasks. Utilize an intuitive system for adding, removing, and modifying activities, making task management a breeze",
       languaje: ["SCSS", "HTML", "REACT"],
+      link: "https://javier1793-op.github.io/things/",
+      git: "https://github.com/javier1793-op/things",
     },
     {
       id: 103,
       urlImg: `${Weather}`,
       title: "Page Weather",
-      description: "Explore the world's weather through my personalized weather app! I've crafted this tool with a touch of simplicity and elegance. Just type in your city, and let the magic unfold. Real-time weather updates, courtesy of a seamless API integration, all wrapped up in a design that's not only functional but also pleasing to the eye. Stay connected to the weather in style!",
+      description:
+        "Explore the world's weather through my personalized weather app! I've crafted this tool with a touch of simplicity and elegance. Just type in your city, and let the magic unfold. Real-time weather updates, courtesy of a seamless API integration, all wrapped up in a design that's not only functional but also pleasing to the eye. Stay connected to the weather in style!",
       languaje: ["SCSS", "HTML", "REACT"],
+      link: "https://javier1793-op.github.io/weather/",
+      git: "https://github.com/javier1793-op/weather",
     },
     {
       id: 104,
       urlImg: `${Bios}`,
       title: "Page Bios Informática",
-      description: "Pagina del ventas online y servicios tecnicosWelcome to our local tech haven! Dive into our customized online store featuring a curated selection of personalized computer products. Explore cutting-edge technology tailored just for you, all while supporting our local business. Discover the perfect tech solutions with a touch of personalization!",
+      description:
+        "Pagina del ventas online y servicios tecnicosWelcome to our local tech haven! Dive into our customized online store featuring a curated selection of personalized computer products. Explore cutting-edge technology tailored just for you, all while supporting our local business. Discover the perfect tech solutions with a touch of personalization!",
       languaje: ["WORDPRESS"],
+      link: "https://biosonline.com.ar/",
+      git: "",
     },
     {
       id: 105,
       urlImg: `${Fabrica}`,
       title: "Page Fábrica Cultural",
-      description: "Step into the heart of our foundation's journey with our event-centric page. Engage in a captivating array of posts highlighting past events, all seamlessly managed through a secure login system. Immerse yourself in the visual journey through our image gallery and tune in to our exclusive radio module, all powered by the latest WordPress technology. ",
+      description:
+        "Step into the heart of our foundation's journey with our event-centric page. Engage in a captivating array of posts highlighting past events, all seamlessly managed through a secure login system. Immerse yourself in the visual journey through our image gallery and tune in to our exclusive radio module, all powered by the latest WordPress technology. ",
       languaje: ["WORDPRESS"],
+      link: "https://biosonline.com.ar/",
+      git: "",
     },
     {
       id: 106,
-      urlImg: `${Homepage}`,
-      title: "Challenger Frontend",
-      description: "grid structure page",
-      languaje: ["SCSS", "HTML"],
+      urlImg: `${Biosit}`,
+      title: "Bios IT virtual campus",
+      description:
+        "private virtual classroom, for rental of space and creation of courses and content for registered students",
+      languaje: ["Moodle"],
+      link: "https://www.bios-it.com.ar/aulabiosit/",
+      git: "",
     },
     {
       id: 107,
-      urlImg: `${Summary}`,
+      urlImg: `${Homepage}`,
       title: "Challenger Frontend",
-      description: "CSS design page about mathematics calculation",
+      description: "grid structure page challenger frontend",
       languaje: ["SCSS", "HTML"],
+      link: "https://javier1793-op.github.io/news-homepage/",
+      git: "https://github.com/javier1793-op/news-homepage",
     },
   ];
   return (
@@ -127,12 +147,24 @@ const Project = () => {
           </section>
 
           <section className="btnModal">
-            <button className="btnModalLink">
+            <a
+              href={selectedProject.link}
+              className="btnModalLink"
+              target="_bank"
+            >
               Page <AiFillChrome className="iconLink" />
-            </button>
-            <button className="btnModalLink">
-              GitHub <AiFillGithub className="iconLink" />
-            </button>
+            </a>
+            {selectedProject.git === "" ? (
+              ""
+            ) : (
+              <a
+                href={selectedProject.git}
+                className="btnModalLink"
+                target="_bank"
+              >
+                GitHub <AiFillGithub className="iconLink" />
+              </a>
+            )}
           </section>
         </Modal>
       )}
