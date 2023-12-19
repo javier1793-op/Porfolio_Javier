@@ -8,7 +8,7 @@ import Things from "../Img/project/things.png";
 import Weather from "../Img/project/weather.png";
 import Bios from "../Img/project/bios.png";
 import Fabrica from "../Img/project/fabrica.png";
-import Homepage from "../Img/project/homepage.png";
+import Ecommerce from "../Img/project/Ecommerce.png";
 import Biosit from "../Img/project/biosit.png";
 import Modal from "./Modal";
 
@@ -98,12 +98,12 @@ const Project = () => {
     },
     {
       id: 107,
-      urlImg: `${Homepage}`,
-      title: "Challenger Frontend",
-      description: "grid structure page challenger frontend",
-      languaje: ["SCSS", "HTML"],
-      link: "https://javier1793-op.github.io/news-homepage/",
-      git: "https://github.com/javier1793-op/news-homepage",
+      urlImg: `${Ecommerce}`,
+      title: "Ecommerce Frontend",
+      description: "shopping cart model, with added to cart and image gallery",
+      languaje: ["SCSS", "HTML",'REACT','REDUX'],
+      link: "https://javier1793-op.github.io/ecommerceFrontmentor/",
+      git: "https://github.com/javier1793-op/ecommerceFrontmentor",
     },
   ];
   return (
