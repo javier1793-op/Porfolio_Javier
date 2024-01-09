@@ -5,10 +5,6 @@ import CV from '../file/CV.pdf'
 
 const DataPersonal = () => {
 
- 
-
-  
-
   const Data = [
     {
       id: 1,
@@ -23,7 +19,7 @@ const DataPersonal = () => {
     {
       id: 3,
       label: "Country:",
-      data: "Argentina",
+      data: "Argentina.",
     },
     {
       id: 4,
