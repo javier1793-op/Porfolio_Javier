@@ -2,7 +2,6 @@
   width: 80%;
   background: var(--white-main);
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0.5rem; 
   gap: 1rem;
@@ -82,7 +81,7 @@
   color: var(--white-main);
   background: var(--black-main);
 }
-@media (max-width: 400px) and (max-width: 390px) {
+@media (min-width: 300px) {
   .contentCardgame {
     width: 90%;
     flex-direction: column;
