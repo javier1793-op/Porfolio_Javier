@@ -82,3 +82,10 @@
   color: var(--white-main);
   background: var(--black-main);
 }
+@media (max-width:400px){
+  .contentCardgame {
+   width: 90%;
+   flex-direction: column;
+  }
+  
+}
