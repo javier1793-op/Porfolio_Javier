@@ -83,7 +83,7 @@ const Project = () => {
       description:
         "Step into the heart of our foundation's journey with our event-centric page. Engage in a captivating array of posts highlighting past events, all seamlessly managed through a secure login system. Immerse yourself in the visual journey through our image gallery and tune in to our exclusive radio module, all powered by the latest WordPress technology. ",
       languaje: ["WORDPRESS"],
-      link: "https://biosonline.com.ar/",
+      link: "https://lafabricacultural.ar",
       git: "",
     },
     {
